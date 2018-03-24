@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA Compatible" content="ie=edge"> 
+        <title>Bootstrap 4 Starter pack</title>
+        
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    
+    <body>
+        <div class="container bg-secondary">
+        <h1 class="display-4 bg-secondary text-center text-light bord">Todo List</h1>
+    <div class="row">
+        <div class="col">
+        <button class="btn btn-outline-dark btn-lg" onclick="handlers.toggleAll()">Toggle All</button>
+        </div>
+        
+    <div class="col">
+        <div class="input-group">
+            <span class="input-group-btn">
+                <button class="btn btn-outline-dark btn-lg" onclick="handlers.addTodo()">Add</button>
+            </span>
+                <input class="form-control" type='text' id='addTodoTextInput'/>
+        </div>
+    </div>
+        
+    </div>
+    <br>
+    <div class="col">
+    <div class="input-group">
+        <span class="input-group-btn">
+          <button class="btn btn-outline-dark btn-lg"onclick="handlers.changeTodo()">Change Me</button>
+        </span>
+        <span class="input-group-addon">
+            <input class="form-control" type="number" id="changeTodoPosition"/>
+        
+            <input class="form-control" type="text" id="changeTodoTextInput"/>
+        </span>
+        </div>
+</div>
+    
+    <br>
+    <div class="col">
+        <div class="input-group">
+            <span class="input-group-btn">
+          <button class="btn btn-outline-dark btn-lg" onclick="handlers.toggleCompleted()"> Toggle Completed</button>
+        </span>
+             <input class="form-control" type="number" id="toggleCompletedPositionInput"/>
+    </div>  
+    </div>
+
+    <ul class="list-group mb-5"></ul>
+    <br>
+</div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/todolist.js"></script>
+    </body>
+</html>
